@@ -19,8 +19,8 @@ def create_thread_and_run(client, assistant_id, prompt, max_checks=30):
     run_id = data["id"]
     thread_id = data["thread_id"]
 
-    print(f"🧵 Thread ID : {thread_id}")
-    print(f"🚀 Run ID launched : {run_id}")
+    print(f"Thread ID : {thread_id}")
+    print(f"Run ID launched : {run_id}")
 
     # Wait for run to complete
     for i in range(max_checks):
@@ -29,7 +29,7 @@ def create_thread_and_run(client, assistant_id, prompt, max_checks=30):
         r.raise_for_status()
         status = r.json().get("status")
         if status == "completed":
-            print(f"✅ Run completed after {i+1} checks.")
+            print(f"Run completed after {i+1} checks.")
             break
         time.sleep(1)
     else:
