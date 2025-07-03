@@ -30,7 +30,7 @@ client = FuelixClient(api_key="..-...your-key...")
 
 ---
 
-##  Assistant Functions
+##  Assistant Functions (to call other functions always get an assistant id with client.assistants.chat()
 
 ### List all assistants
 ```python
