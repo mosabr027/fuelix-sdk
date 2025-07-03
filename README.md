@@ -1,4 +1,4 @@
-# 🚀 FuelIX SDK (Unofficial)
+# FuelIX SDK (Unofficial) by Rocket Science 🚀
 
 This SDK provides a clean Python interface to the [FuelIX API](https://api-beta.fuelix.ai), including support for:
 
@@ -8,7 +8,7 @@ This SDK provides a clean Python interface to the [FuelIX API](https://api-beta.
 
 ---
 
-## 🔧 Installation
+##  Installation
 
 ```bash
 git clone https://github.com/mosabr027/fuelix-sdk.git
@@ -18,7 +18,7 @@ pip install -e .
 
 ---
 
-## 🔐 Authentication
+##  Authentication
 
 You must provide your FuelIX API key manually:
 
@@ -30,7 +30,7 @@ client = FuelixClient(api_key="sk-...your-key...")
 
 ---
 
-## 📚 Assistant Functions
+##  Assistant Functions
 
 ### List all assistants
 ```python
@@ -47,12 +47,12 @@ print(reply)
 
 ---
 
-## 💬 Core Chat Completion (OpenAI style)
+##  Core Chat Completion (OpenAI style)
 
 ```python
 messages = [{"role": "user", "content": "Tell me a joke"}]
 response = client.core.chat_completion(
-    model="gpt-3.5-turbo",
+    model="claude-3-5-haiku",
     messages=messages,
     temperature=0.7,
     max_tokens=100
@@ -62,7 +62,7 @@ print(response["choices"][0]["message"]["content"])
 
 ---
 
-## 🖼️ Generate an Image
+## Generate an Image
 
 ```python
 from fuelix_sdk.core.images import generate_image
@@ -70,7 +70,7 @@ from fuelix_sdk.core.images import generate_image
 image_data = generate_image(
     client,
     prompt="A robot cooking in a futuristic kitchen",
-    model="dall-e-3",
+    model="imagen-3",
     size="512x512"
 )
 
@@ -86,7 +86,7 @@ image.show()
 
 ---
 
-## 📎 Thread + Run (Manual Usage)
+## Thread + Run (Manual Usage)
 
 ```python
 from fuelix_sdk.assistants.runs import create_thread_and_run
@@ -99,13 +99,13 @@ print(response)
 
 ---
 
-## 🧪 Test Notebook
+## Test Notebook
 
 See [`examples/fuelix_demo.ipynb`](examples/fuelix_demo.ipynb) for a complete walk-through.
 
 ---
 
-## 🛠️ SDK Structure
+## SDK Structure
 
 ```
 fuelix_sdk/
