@@ -7,7 +7,7 @@ setup(
     install_requires=['requests'],
     include_package_data=True,
     description='Unofficial SDK for FuelIX API',
-    author='Your Name',
-    author_email='you@example.com',
+    author='Mohamed Sabri',
+    author_email='msabri@rocketscience.one',
     zip_safe=False
 )
