@@ -101,7 +101,7 @@ print(response)
 
 ## Test Notebook
 
-See [`examples/fuelix_demo.ipynb`](examples/fuelix_demo.ipynb) for a complete walk-through.
+See [`examples/fuelix_demo_notebook.ipynb`](examples/fuelix_demo_notebook.ipynb) for a complete walk-through.
 
 ---
 
