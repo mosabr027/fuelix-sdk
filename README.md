@@ -25,7 +25,7 @@ You must provide your FuelIX API key manually:
 ```python
 from fuelix_sdk import FuelixClient
 
-client = FuelixClient(api_key="sk-...your-key...")
+client = FuelixClient(api_key="..-...your-key...")
 ```
 
 ---
