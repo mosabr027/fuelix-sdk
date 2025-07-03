@@ -5,8 +5,6 @@ def get_api_key():
     key = os.getenv("FUELIX_API_KEY")
     if not key:
         key = input("Enter your FuelIX API key: ").strip()
-    if not key.startswith("sk-"):
-        raise ValueError("Invalid API key format.")
     return key
 
 def get_headers(api_key):
